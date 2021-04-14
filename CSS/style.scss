@@ -1,8 +1,15 @@
 @import "./reset";
 @import "./colors";
 @import "./navbar";
+@import "./header";
+@import "./promo";
 
-.section-navbar-wrapper {
+
+body {
+    font-family: Lato;
+}
+
+.section-navbar-wrapper, .section-promo-wrapper {
     max-width: 1140px;
     margin: 0 auto;
 }

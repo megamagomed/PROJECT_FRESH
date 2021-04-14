@@ -1,0 +1,9 @@
+.section-promo {
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .promo-card-narrow {
+        }
+    }
+}

@@ -385,7 +385,69 @@ template {
   margin-right: 42px;
 }
 
-.section-navbar-wrapper {
+.section-header {
+  background-color: #F1E4E6;
+}
+
+.section-header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-header-wrapper .header-image {
+  width: 50%;
+}
+
+.section-header-wrapper .herobox {
+  padding-top: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.section-header-wrapper .herobox .line {
+  width: 12px;
+  height: 92px;
+  background-color: #F16D7F;
+  margin-right: 16px;
+}
+
+.section-header-wrapper .herobox .text h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  margin: 0;
+}
+
+.section-header-wrapper .herobox .text h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0;
+}
+
+.section-header-wrapper .herobox .text h2 span {
+  color: #F16D7F;
+}
+
+.section-promo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  font-family: Lato;
+}
+
+.section-navbar-wrapper, .section-promo-wrapper {
   max-width: 1140px;
   margin: 0 auto;
 }
