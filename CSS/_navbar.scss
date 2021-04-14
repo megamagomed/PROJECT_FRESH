@@ -1,0 +1,36 @@
+.section-navbar {
+    background-color: $black;
+    &-wrapper {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-logosearch{
+                display: flex;
+                align-items: center;
+                gap: 41px;
+                &__logo{
+
+                }
+                &__search{
+
+                }
+            }
+            &-menu {
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+                &__burger {
+                    margin-right: 25px;
+
+                }
+                &__profile {
+                    margin-right: 42px;
+                }
+                &__cart {
+
+                }
+            }
+        }
+    }
+}
