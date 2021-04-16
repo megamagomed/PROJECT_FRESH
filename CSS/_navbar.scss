@@ -8,9 +8,8 @@
             &-logosearch{
                 display: flex;
                 align-items: center;
-                gap: 41px;
                 &__logo{
-
+                    margin-right: 41px;
                 }
                 &__search{
 
@@ -21,11 +20,11 @@
                 list-style-type: none;
                 align-items: center;
                 &__burger {
-                    margin-right: 25px;
+                    margin-right: 33px;
 
                 }
                 &__profile {
-                    margin-right: 42px;
+                    margin-right: 33px;
                 }
                 &__cart {
 

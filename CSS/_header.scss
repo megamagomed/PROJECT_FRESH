@@ -1,38 +1,70 @@
 .section-header {
     background-color: $header;
+
     &-wrapper{
         display: flex;
+
         .header-image {
-            width: 50%;
+            img {
+                height: auto;
+                width: 100%;
+            }
         }
 
         .herobox {
-            padding-top: 290px;
             display: flex;
-            width: 50%;
-            .line{
-                width: 12px;
-                height: 92px;
-                background-color: $pink;
-                margin-right: 16px;
-            }
+            flex-basis: 50%;
+            align-items: center;
+            
+
             .text {
-                h1 {
-                    font-weight: 900;
-                    font-size: 48px;
-                    line-height: 58px; 
-                    margin: 0;
-                }
-                h2 {
-                    font-weight: bold;
-                    font-size: 32px;
-                    line-height: 38px;
-                    margin: 0;
-                    span {
-                        color: $pink;
-                    }
+                position: relative;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -16px;
+                    width: 12px;
+                    height: 100%;
+                    background-color: $pink
+
                 }
             }
+
         }
+
+
+
+
+
     }
 }
+// .herobox {
+//     padding-top: 290px;
+//     display: flex;
+//     width: 50%;
+//     .line{
+//         width: 12px;
+//         height: 92px;
+//         background-color: $pink;
+//         margin-right: 16px;
+//     }
+//     .text {
+//         h1 {
+//             font-weight: 900;
+//             font-size: 48px;
+//             line-height: 58px; 
+//             margin: 0;
+//         }
+//         h2 {
+//             font-weight: bold;
+//             font-size: 32px;
+//             line-height: 38px;
+//             margin: 0;
+//             span {
+//                 color: $pink;
+//             }
+//         }
+//     }
+// }
