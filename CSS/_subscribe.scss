@@ -1,0 +1,38 @@
+.section-subscribe {
+    background-image: url(../img/subscribe/subscribe_bgi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+    &-wrapper {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        
+
+        &-feedback {
+            width: 50%;
+            padding: 97px 0 126px 0;
+            p {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            img {
+                margin-bottom: 30px;
+            }
+        }
+        &-subscribe {
+            h2 {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 167.2%;
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 167.2%;
+                margin-bottom: 32px;
+            }
+           
+        }
+    }
+}

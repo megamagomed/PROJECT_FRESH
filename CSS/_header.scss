@@ -3,7 +3,8 @@
 
     &-wrapper{
         display: flex;
-
+        justify-content: center;
+        margin-bottom: 65px;
         .header-image {
             img {
                 height: auto;
@@ -18,7 +19,26 @@
             
 
             .text {
+                margin-left: 63px;
+                padding-left: 16px;
                 position: relative;
+
+                h1 {
+                    font-weight: 900;
+                    font-size: 48px;
+                    line-height: 58px; 
+                    margin: 0;
+                }
+
+                h2 {
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 38px;
+                    margin: 0;
+                    span {
+                        color: $pink;
+                    }
+                }
                 
                 &::before {
                     content: "";
@@ -28,7 +48,6 @@
                     width: 12px;
                     height: 100%;
                     background-color: $pink
-
                 }
             }
 

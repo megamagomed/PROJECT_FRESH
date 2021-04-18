@@ -1,0 +1,31 @@
+.section-advantages {
+    background-color: $footer_maincolor;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 0;
+        &-card {
+            width: 360px;
+            height: 134px;
+            text-align: center;
+            color: $footer_card_text;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                margin-bottom: 28px;
+            }
+            h3 {
+                font-size: 19.96px;
+                line-height: 24px;
+                margin-bottom: 16px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 13.972px;
+                line-height: 17px;
+            }
+        }
+    }
+}
