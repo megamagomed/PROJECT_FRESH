@@ -424,9 +424,26 @@ textarea {
   margin-bottom: 65px;
 }
 
+.section-header-wrapper .header-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.section-header-wrapper .header-image picture {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flex-endg;
+      -ms-flex-pack: flex-endg;
+          justify-content: flex-endg;
+}
+
 .section-header-wrapper .header-image img {
   height: auto;
-  width: 100%;
 }
 
 .section-header-wrapper .herobox {
