@@ -8,10 +8,12 @@
         display: flex;
         text-align: center;
         align-items: center;
+        justify-content: space-between;
         
 
         &-feedback {
-            width: 50%;
+            width: 360px;
+            height: 225px;
             padding: 97px 0 126px 0;
             p {
                 font-size: 20px;
@@ -22,6 +24,9 @@
             }
         }
         &-subscribe {
+            width: 557px;
+            height: 142px;
+            
             h2 {
                 font-weight: bold;
                 font-size: 24px;
@@ -30,7 +35,31 @@
             h3 {
                 font-size: 18px;
                 line-height: 167.2%;
-                margin-bottom: 32px;
+                margin-bottom: 26px;
+            }
+            form {                 
+                display: flex;
+                justify-content: center;
+                input[type=email], input[type=submit] {
+                    margin: 0;
+                    border: 0; 
+                    font-size: 14px;
+                    line-height: 17px; 
+                    padding: 14px 14px; 
+                    text-align: center;            
+                }
+                input[type=email] { 
+                    border-top-left-radius: 35px;
+                    border-bottom-left-radius: 35px;
+                    color: $footer_maincolor;
+                    background-color:  #E1E1E1;
+                }                 
+                input[type=submit] {
+                    border-top-right-radius: 35px;
+                    border-bottom-right-radius: 35px;
+                    background-color: $pink;
+                    color: $promo_text;
+                }
             }
            
         }

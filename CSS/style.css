@@ -681,10 +681,14 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-subscribe-wrapper-feedback {
-  width: 50%;
+  width: 360px;
+  height: 225px;
   padding: 97px 0 126px 0;
 }
 
@@ -697,6 +701,11 @@ textarea {
   margin-bottom: 30px;
 }
 
+.section-subscribe-wrapper-subscribe {
+  width: 557px;
+  height: 142px;
+}
+
 .section-subscribe-wrapper-subscribe h2 {
   font-weight: bold;
   font-size: 24px;
@@ -706,7 +715,39 @@ textarea {
 .section-subscribe-wrapper-subscribe h3 {
   font-size: 18px;
   line-height: 167.2%;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
+}
+
+.section-subscribe-wrapper-subscribe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-subscribe-wrapper-subscribe form input[type=email], .section-subscribe-wrapper-subscribe form input[type=submit] {
+  margin: 0;
+  border: 0;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 14px 14px;
+  text-align: center;
+}
+
+.section-subscribe-wrapper-subscribe form input[type=email] {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  color: #222224;
+  background-color: #E1E1E1;
+}
+
+.section-subscribe-wrapper-subscribe form input[type=submit] {
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: #F16D7F;
+  color: #FFFFFF;
 }
 
 .footer {
@@ -717,13 +758,26 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-wrapper__copyright {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F8F8F8;
+  padding: 30px;
 }
 
 body {
   font-family: Lato;
 }
 
-.section-navbar-wrapper, .section-promo-wrapper, .section-goods-cards-wrapper, .section-advantages-wrapper, .section-subscribe-wrapper {
+.section-navbar-wrapper, .section-promo-wrapper, .section-goods-cards-wrapper, .section-advantages-wrapper, .section-subscribe-wrapper, .footer-wrapper {
   max-width: 1140px;
   margin: 0 auto;
 }
