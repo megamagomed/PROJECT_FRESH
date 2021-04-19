@@ -11,5 +11,10 @@
             color: $card_bgc;
             padding: 30px;
         }
+        &-social {
+            a {
+                margin: 7px;
+            }
+        }
     }
 }
