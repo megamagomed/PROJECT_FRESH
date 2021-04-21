@@ -1,0 +1,21 @@
+.section-header {
+    background-color: $newarrival_bgc;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0 60px 0;
+        h1 {
+            font-size: 24px;
+            line-height: 29px;
+            color: $pink;
+        }
+        h2 {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        span {
+            color: $pink;
+        }
+    }
+}

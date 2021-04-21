@@ -1,0 +1,23 @@
+.section-filters {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0 61px 0;
+        &-filter {
+            display: flex;
+            h2 {
+                margin-right: 10px;
+            }
+        }
+        &-sort {
+            display: flex;
+            .sort {
+                display: flex;
+                margin-right: 28px;
+                h2 {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

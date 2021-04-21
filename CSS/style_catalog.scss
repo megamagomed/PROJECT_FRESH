@@ -1,0 +1,14 @@
+@import "./reset";
+@import "./colors";
+@import "./navbar";
+@import "./header_catalog";
+@import "./filters_catalog";
+
+body {
+    font-family: Lato;
+}
+
+.section-navbar-wrapper, .section-header-wrapper, .section-filters-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
