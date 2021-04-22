@@ -3,12 +3,16 @@
 @import "./navbar";
 @import "./header_catalog";
 @import "./filters_catalog";
+@import "./goods_catalog";
+@import "./advantages";
+@import "./subscribe";
+@import "./footer";
 
 body {
     font-family: Lato;
 }
 
-.section-navbar-wrapper, .section-header-wrapper, .section-filters-wrapper {
+.section-navbar-wrapper, .section-header-wrapper, .section-filters-wrapper, .section-goods-wrapper, .section-advantages-wrapper, .section-subscribe-wrapper, .footer-wrapper {
     max-width: 1140px;
     margin: 0 auto;
 }

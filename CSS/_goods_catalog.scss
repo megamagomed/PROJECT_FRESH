@@ -1,0 +1,41 @@
+.section-goods {
+    &-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+
+       .goods-card {
+            width: 360px;
+            height: 582px;
+            background-color: $card_bgc;
+            margin-bottom: 30px;
+
+            &__img {
+                margin-bottom: 25px;
+            }
+
+            &-text {
+                padding-left: 18px;
+                h3 {
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: $card_title;
+                    margin-bottom: 13px;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: $card_text; 
+                    margin-bottom: 18px;
+                }
+                span {
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $pink;
+                }
+            }   
+       }
+    }
+}
