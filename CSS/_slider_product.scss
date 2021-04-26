@@ -1,0 +1,19 @@
+.section-slider {
+    background-color: #F7F7F7;
+        margin-bottom: 64px;
+    &-wrapper {
+        background-image: url("../IMG/slider_product/Layer42.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain  ;
+        height: 777px;
+        width: 100%;
+        
+        &-arrows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+    }
+}

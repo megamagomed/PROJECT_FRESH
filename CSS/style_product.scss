@@ -1,0 +1,18 @@
+@import "./reset";
+@import "./colors";
+@import "./navbar";
+@import "./header_catalog";
+@import "./slider_product";
+@import "./description_product";
+@import "./goods_product";
+@import "./subscribe";
+@import "./footer";
+
+body {
+    font-family: Lato;
+}
+
+.section-navbar-wrapper, .section-header-wrapper, .section-slider-wrapper, .section-description-wrapper, .section-goods-wrapper, .section-subscribe-wrapper, .footer-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
