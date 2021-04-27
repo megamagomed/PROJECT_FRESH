@@ -438,9 +438,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: flex-endg;
-      -ms-flex-pack: flex-endg;
-          justify-content: flex-endg;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .section-header-wrapper .header-image img {
@@ -734,7 +734,7 @@ textarea {
   font-size: 14px;
   line-height: 17px;
   padding: 14px 14px;
-  text-align: center;
+  text-align: left;
 }
 
 .section-subscribe-wrapper-subscribe form input[type=email] {
