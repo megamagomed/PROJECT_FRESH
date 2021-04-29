@@ -1,0 +1,111 @@
+.section-goods {
+    &-wrapper {
+        display: flex;
+        &-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .goods-card {
+                display: flex;
+                width: 652px;
+                height: 306px;
+                position: relative;
+                margin-right: 128px;
+                box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13), 0 4px 4px rgba(0, 0, 0, 0.25);
+
+                &__img {
+                    flex-basis: 262px;
+                }
+                &-text {
+                    width: 262px;
+                    padding: 22px 31px;
+                    h2 {
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: $black;
+                        margin-bottom: 42px;
+                    }
+                    h3 {
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #575757;
+                        span {
+                            color: $pink;
+                        }
+                        margin-bottom: 6px;
+                    }
+                    h4 {
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: #575757;
+
+                        input {
+                            margin-left: 24px;
+                            text-align: center;
+                            width: 44px;
+                        }
+                    }
+                }
+                .cross {
+                    position: absolute;
+                    top: 28px;
+                    right: 22px;
+                }
+            }
+        }
+
+        &-forms {
+            display: flex;
+            flex-direction: column;
+            .shipping {
+                padding-top: 10px;
+                h3 {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $black;
+                    margin-bottom: 20px;
+                }
+                input {
+                    padding: 14px 0 14px 17px;
+                    margin-bottom: 20px;
+                    display: block;
+                    border: 1px solid #a4a4a4;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    width: 100%;
+                }
+                button {
+                    padding: 12px 15px;
+                    background-color: white;
+                    border: 1px solid #a4a4a4;
+                    a {
+                        text-decoration: none;
+                        font-weight: 300;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #4a4a4a;
+                    }
+                }
+            }
+
+            .checkout {
+                width: 360px;
+                height: 214px;
+                background-color: #f5f3f3;
+                h2 {
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #4a4a4a;
+                }
+                h3 {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #222222;
+                }
+            }
+        }
+    }
+}

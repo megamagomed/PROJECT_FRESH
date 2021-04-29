@@ -1,5 +1,4 @@
 .section-description {
-    
     &-wrapper {
         text-align: center;
         h1 {
@@ -9,16 +8,16 @@
             color: $pink;
             margin-bottom: 27px;
             position: relative;
-            display:inline-block;
+            display: inline-block;
             &::before {
                 content: "";
                 position: absolute;
                 bottom: -12px;
-                left: 50px;
+                left: 50%;
                 width: 63px;
                 height: 3px;
-                background-color: $pink
-                
+                background-color: $pink;
+                transform: translateX(-50%);
             }
         }
 
@@ -26,23 +25,22 @@
             font-weight: 300;
             font-size: 18px;
             line-height: 22px;
-            color: #4D4D4D;
+            color: #4d4d4d;
             margin-bottom: 48px;
         }
         p {
             font-weight: 300;
             font-size: 14px;
             line-height: 17px;
-            color: #5E5E5E;
+            color: #5e5e5e;
             margin-bottom: 32px;
         }
         span {
             font-weight: 300;
             font-size: 24px;
             line-height: 29px;
-            color: #EF5B70;
+            color: #ef5b70;
             position: relative;
-           
         }
         &-choice {
             margin-top: 130px;
@@ -55,15 +53,13 @@
                 h3 {
                     font-size: 14px;
                     line-height: 17px;
-                    color: #6F6E6E;
+                    color: #6f6e6e;
                     margin-right: 10px;
                 }
-                
             }
-
         }
         button {
-            border: 1px solid #FF6A6A;
+            border: 1px solid #ff6a6a;
             padding: 15px 24px;
             background-color: white;
             margin-bottom: 64px;
@@ -71,8 +67,7 @@
                 text-decoration: none;
                 font-size: 16px;
                 line-height: 19px;
-                color: #F26376;
-                
+                color: #f26376;
             }
         }
     }

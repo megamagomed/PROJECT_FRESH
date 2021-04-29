@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="CSS/style_cart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="section-navbar">
+        <div class="section-navbar-wrapper">
+            <nav class="navbar">
+                <div class="navbar-logosearch">
+                    <span class="navbar-logosearch__logo">
+                        <a href="index.html">
+                            <img src="img/navbar/logo.svg" alt="logo">
+                        </a>
+                    </span>
+                    <span class="navbar-logosearch__search">
+                        <img src="img/navbar/search.svg" alt="search">
+                    </span>
+                </div>
+                <ul class="navbar-menu">
+                    <li>
+                        <a class="navbar-menu__burger" href="#">
+                            <img src="img/navbar/burger.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navbar-menu__profile" href="#">
+                            <img src="img/navbar/profile.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="navbar-menu__cart" href="#">
+                            <img src="img/navbar/cart.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <header class="section-header">
+        <div class="section-header-wrapper">
+            <h1>SHOPING CART</h1>
+        </div>
+    </header>
+
+    <section class="section-goods">
+        <div class="section-goods-wrapper">
+            <div class="section-goods-wrapper-cards">
+                <div class="goods-card">
+                    <div class="goods-card__img">
+                        <a href="product.html">
+                            <img src="img/goods_cart/card1.jpg" alt="card1">
+                        </a>
+                    </div>
+                    <div class="goods-card-text">
+                        <h2>MANGO PEOPLE T-SHIRT</h2>
+                        <h3>Price:<span>$300</span></h3>
+                        <h3>Color: Red</h3>
+                        <h3>Size: Xl</h3>
+                        <h4>Quantity:
+                            <input type="text" value="2">
+                        </h4>
+
+                    </div>
+                    <div class="cross">
+                        <img src="img/goods_cart/cross.svg" alt="cross">
+                    </div>
+                </div>
+                <div class="goods-card">
+                    <div class="goods-card__img">
+                        <a href="product.html">
+                            <img src="img/goods_cart/card2.jpg" alt="card2">
+                        </a>
+                    </div>
+                    <div class="goods-card-text">
+                        <h2>MANGO PEOPLE T-SHIRT</h2>
+                        <h3>Price:<span>$300</span></h3>
+                        <h3>Color: Red</h3>
+                        <h3>Size: Xl</h3>
+                        <h4>Quantity:
+                            <input type="text" value="2">
+                        </h4>
+                    </div>
+                    <div class="cross">
+                        <img src="img/goods_cart/cross.svg" alt="cross">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-goods-wrapper-forms">
+                <div class="shipping">
+                    <h3>SHIPPING ADRESS</h3>
+                    <form action="">
+                        <input type="text">
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="Postcode/Zip">
+                    </form>
+                    <button>
+                        <a href="">GET A QUOTE</a>
+                    </button>
+                </div>
+                <div class="checkout">
+                    <h2>SUB TOTAL $900</h2>
+                    <h3>GRAND TOTAL $900</h3>
+                    <button>
+                        <a href="">PROCEED TO CHECKOUT</a>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
