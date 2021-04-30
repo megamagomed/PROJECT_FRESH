@@ -450,7 +450,6 @@ textarea {
   width: 652px;
   height: 306px;
   position: relative;
-  margin-right: 128px;
   -webkit-box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13), 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13), 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -493,12 +492,41 @@ textarea {
   margin-left: 24px;
   text-align: center;
   width: 44px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #656565;
+  padding: 2px;
+  border: 1px solid #eaeaea;
 }
 
 .section-goods-wrapper-cards .goods-card .cross {
   position: absolute;
   top: 28px;
   right: 22px;
+}
+
+.section-goods-wrapper-cards .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+  margin-bottom: 128px;
+}
+
+.section-goods-wrapper-cards .buttons button {
+  padding: 17px 40px;
+  background-color: #ffffff;
+}
+
+.section-goods-wrapper-cards .buttons button a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
 .section-goods-wrapper-forms {
@@ -509,10 +537,12 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: 128px;
 }
 
 .section-goods-wrapper-forms .shipping {
   padding-top: 10px;
+  margin-bottom: 57px;
 }
 
 .section-goods-wrapper-forms .shipping h3 {
@@ -531,7 +561,7 @@ textarea {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  width: 100%;
+  width: 343px;
 }
 
 .section-goods-wrapper-forms .shipping button {
@@ -552,12 +582,19 @@ textarea {
   width: 360px;
   height: 214px;
   background-color: #f5f3f3;
+  text-align: center;
 }
 
 .section-goods-wrapper-forms .checkout h2 {
   font-size: 11px;
   line-height: 13px;
   color: #4a4a4a;
+  text-align: right;
+  padding: 39px 34px 12px 0px;
+}
+
+.section-goods-wrapper-forms .checkout h2 span {
+  margin-left: 24px;
 }
 
 .section-goods-wrapper-forms .checkout h3 {
@@ -565,13 +602,156 @@ textarea {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+  text-align: right;
+  padding-right: 34px;
+  padding-bottom: 21px;
+}
+
+.section-goods-wrapper-forms .checkout h3 span {
+  color: #F16D7F;
+  margin-left: 24px;
+}
+
+.section-goods-wrapper-forms .checkout hr {
+  width: 275px;
+  color: #e2e2e2;
+  margin-bottom: 17px;
+}
+
+.section-goods-wrapper-forms .checkout button {
+  background-color: #F16D7F;
+  border: none;
+  padding: 15px 41px;
+}
+
+.section-goods-wrapper-forms .checkout button a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.section-subscribe {
+  background-image: url(../img/subscribe/subscribe_bgi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.section-subscribe-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-subscribe-wrapper-feedback {
+  width: 360px;
+  height: 225px;
+  padding: 97px 0 126px 0;
+}
+
+.section-subscribe-wrapper-feedback p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.section-subscribe-wrapper-feedback img {
+  margin-bottom: 30px;
+}
+
+.section-subscribe-wrapper-subscribe {
+  width: 557px;
+  height: 142px;
+}
+
+.section-subscribe-wrapper-subscribe h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 167.2%;
+}
+
+.section-subscribe-wrapper-subscribe h3 {
+  font-size: 18px;
+  line-height: 167.2%;
+  margin-bottom: 26px;
+}
+
+.section-subscribe-wrapper-subscribe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-subscribe-wrapper-subscribe form input[type=email], .section-subscribe-wrapper-subscribe form input[type=submit] {
+  margin: 0;
+  border: 0;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 14px 14px;
+  text-align: left;
+}
+
+.section-subscribe-wrapper-subscribe form input[type=email] {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  color: #222224;
+  background-color: #E1E1E1;
+}
+
+.section-subscribe-wrapper-subscribe form input[type=submit] {
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+
+.footer {
+  background-color: #222224;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-wrapper__copyright {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F8F8F8;
+  padding: 30px;
+}
+
+.footer-wrapper-social a {
+  margin: 7px;
 }
 
 body {
   font-family: Lato;
 }
 
-.section-navbar-wrapper, .section-header-wrapper, .section-goods-wrapper, .section-subscribe-wrapper, .footer-wrapper {
+.section-navbar-wrapper,
+.section-header-wrapper,
+.section-goods-wrapper,
+.section-subscribe-wrapper,
+.footer-wrapper {
   max-width: 1140px;
   margin: 0 auto;
 }

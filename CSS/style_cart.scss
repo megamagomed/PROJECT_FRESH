@@ -3,12 +3,18 @@
 @import "./navbar";
 @import "./header_cart";
 @import "./goods_cart";
+@import "./subscribe";
+@import "./footer";
 
 body {
     font-family: Lato;
 }
 
-.section-navbar-wrapper, .section-header-wrapper, .section-goods-wrapper, .section-subscribe-wrapper, .footer-wrapper {
+.section-navbar-wrapper,
+.section-header-wrapper,
+.section-goods-wrapper,
+.section-subscribe-wrapper,
+.footer-wrapper {
     max-width: 1140px;
     margin: 0 auto;
 }
