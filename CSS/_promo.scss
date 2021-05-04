@@ -2,7 +2,10 @@
     margin-bottom: 96px;
     
     &-wrapper {
-        
+        @include media('<=tablet') {
+            margin-left: 16px !important;
+            margin-right: 16px !important;
+        }
         .promo-card {
             position: relative;
             &-text {
