@@ -27,32 +27,34 @@
             background-color: $card_bgc;
             margin-bottom: 30px;
 
-           
             &__img {
                 overflow: hidden;
                 position: relative;
-               
-                button {
+
+                a {
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     display: none;
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #ffffff;
+                    border: 1px solid white;
+                    padding: 14px 13px;
                 }
 
                 &:hover {
-                    
                     img {
-                        
                         transform: scale(1.15);
-                        transition: all .3s;
+                        transition: all 0.3s;
                     }
-                    button {
+                    a {
                         display: inline-block;
                         z-index: 2;
                     }
                     &::before {
-                       
                         content: "";
                         position: absolute;
                         top: 0;
@@ -63,31 +65,32 @@
                         z-index: 1;
                         transition: all 0.3s;
                     }
-                    &::after {
-                    }
                 }
             }
 
             &-text {
                 padding-left: 18px;
                 padding-top: 32px;
-                h3 {
-                    font-size: 13px;
-                    line-height: 16px;
-                    color: $card_title;
-                    margin-bottom: 13px;
-                }
-                p {
-                    font-weight: 300;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: $card_text;
-                    margin-bottom: 18px;
-                }
-                span {
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: $pink;
+                a {
+                    text-decoration: none;
+                    h3 {
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: $card_title;
+                        margin-bottom: 13px;
+                    }
+                    p {
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: $card_text;
+                        margin-bottom: 18px;
+                    }
+                    span {
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $pink;
+                    }
                 }
             }
         }
@@ -101,6 +104,11 @@
             color: $pink;
             padding: 15px 40px;
             border: 1px solid $pink;
+        }
+        a:hover {
+            color: white;
+            background-color: $pink;
+            transition: 0.4s;
         }
     }
 }

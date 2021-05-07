@@ -26,6 +26,12 @@
                 font-size: 13.972px;
                 line-height: 17px;
             }
+        &:hover {
+            transform: rotate(360deg);
+            transition: 1s;
         }
+        
+        }
+        
     }
 }

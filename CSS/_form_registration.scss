@@ -1,0 +1,87 @@
+.section-registration {
+    &-wrapper {
+        display: flex;
+        .registration_form {
+            width: 343px;
+            margin-right: 128px;
+            fieldset {
+                display: flex;
+                flex-direction: column;
+                border: 0;
+                legend {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #222222;
+                    margin-bottom: 20px;
+                }
+                input {
+                    padding: 14px 0 14px 17px;
+                    margin-bottom: 20px;
+                    display: block;
+                    border: 1px solid #a4a4a4;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    width: 343px;
+                }
+                div {
+                    display: flex;
+                    justify-content: left;
+                    width: 132px;
+                    font-weight: 300;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #000000;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #b1b1b1;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        button {
+            display: flex;
+            align-items: center;
+            padding: 17px 29px;
+            background-color: $pink;
+            border: 1px solid $pink;
+            margin-bottom: 96px;
+            h3 {
+                margin-right: 20px;
+                font-size: 14px;
+                line-height: 17px;
+                color: #ffffff;
+            }
+        }
+    }
+    .loyalty {
+        h2 {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 21px;
+        }
+        p {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 21px;
+        }
+        li {
+            margin-bottom: 16px;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            img {
+                margin-right: 22px;
+            }
+        }
+    }
+}

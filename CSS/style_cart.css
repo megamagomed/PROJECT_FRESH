@@ -363,6 +363,11 @@ textarea {
   padding: 0.2em 0;
 }
 
+/**
+*
+* Testing
+*
+**/
 .section-navbar {
   background-color: #222222;
 }
@@ -378,6 +383,13 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   padding: 18px 0 18px 0;
+}
+
+@media (max-width: 768px) {
+  .section-navbar-wrapper .navbar {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .section-navbar-wrapper .navbar-logosearch {
@@ -693,7 +705,8 @@ textarea {
           justify-content: center;
 }
 
-.section-subscribe-wrapper-subscribe form input[type=email], .section-subscribe-wrapper-subscribe form input[type=submit] {
+.section-subscribe-wrapper-subscribe form input[type="email"],
+.section-subscribe-wrapper-subscribe form input[type="submit"] {
   margin: 0;
   border: 0;
   font-size: 14px;
@@ -702,18 +715,26 @@ textarea {
   text-align: left;
 }
 
-.section-subscribe-wrapper-subscribe form input[type=email] {
+.section-subscribe-wrapper-subscribe form input[type="email"] {
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
   color: #222224;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
 }
 
-.section-subscribe-wrapper-subscribe form input[type=submit] {
+.section-subscribe-wrapper-subscribe form input[type="submit"] {
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
   background-color: #F16D7F;
   color: #FFFFFF;
+  border: 1px solid #F16D7F;
+}
+
+.section-subscribe-wrapper-subscribe form input[type="submit"]:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .footer {

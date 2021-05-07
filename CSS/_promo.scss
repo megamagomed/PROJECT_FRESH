@@ -1,8 +1,8 @@
 .section-promo {
     margin-bottom: 96px;
-    
+
     &-wrapper {
-        @include media('<=tablet') {
+        @include media("<=tablet") {
             margin-left: 16px !important;
             margin-right: 16px !important;
         }
@@ -18,7 +18,7 @@
                 h4 {
                     font-size: 16px;
                     line-height: 19px;
-                    color: $promo-text
+                    color: $promo-text;
                 }
 
                 h3 {
@@ -39,6 +39,17 @@
             display: flex;
             gap: 30px;
             margin-bottom: 30px;
+            &:hover {
+                transform: scale(1.02);
+                transition: 0.3s;
+            }
         }
+        .promo-card-wide {
+            &:hover {
+                transform: scale(1.02);
+                transition: 0.3s;
+            }
+        }
+
     }
 }

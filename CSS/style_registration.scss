@@ -1,0 +1,20 @@
+@import "./reset";
+@import "./colors";
+@import "./breakpoints";
+@import "./navbar";
+@import"./header_registration";
+@import "./form_registration";
+@import "./subscribe";
+@import "./footer";
+
+
+
+
+body {
+    font-family: Lato;
+}
+
+.section-navbar-wrapper, .section-header-wrapper, .section-registration-wrapper, .section-goods-wrapper, .section-advantages-wrapper, .section-subscribe-wrapper, .footer-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}

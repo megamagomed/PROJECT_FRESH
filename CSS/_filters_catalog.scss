@@ -4,18 +4,46 @@
         justify-content: space-between;
         padding: 50px 0 61px 0;
         &-filter {
-            display: flex;
-            h2 {
-                margin-right: 10px;
+            width: 360px;
+            margin-right: 30px;
+            position: relative;
+            .details[open] {
+                box-shadow:  6px 4px 35px;
+                .summary {
+                    color: red;
+                }
+            }
+            .details {
+                
+               
+                
+                summary {
+                    display: flex;
+                    h2 {
+                        margin-right: 10px;
+                        color: black;
+                    }
+                }
+                .filter-content {
+                    position: absolute;
+                    top: 20px;
+                    
+                }
             }
         }
         &-sort {
             display: flex;
+            flex-grow: 1;
+            justify-content: left;
             .sort {
-                display: flex;
                 margin-right: 28px;
-                h2 {
-                    margin-right: 10px;
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    h2 {
+                        margin-right: 10px;
+                        color: black;
+                    }
                 }
             }
         }
