@@ -43,6 +43,9 @@
                 transform: scale(1.02);
                 transition: 0.3s;
             }
+            @include media("<=phone") {
+                flex-direction: column-reverse;
+            }
         }
         .promo-card-wide {
             &:hover {
@@ -50,6 +53,5 @@
                 transition: 0.3s;
             }
         }
-
     }
 }

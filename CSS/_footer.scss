@@ -1,10 +1,14 @@
 .footer {
     background-color: $footer_maincolor;
-    
+
     &-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include media("<=phone") {
+            flex-direction: column-reverse ;
+            padding-top: 43px;
+        }
         &__copyright {
             font-size: 16px;
             line-height: 19px;
@@ -13,7 +17,42 @@
         }
         &-social {
             a {
+                width: 32px;
+                height: 32px;
+                background-color: white;
                 margin: 7px;
+                display: inline-block;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                &:hover {
+                    background-color: $pink;
+                }
+            }
+            a:nth-child(1) {
+                background-image: url(../IMG/footer/facebook.svg);
+                &:hover {
+                    background-image: url(../IMG/footer/face_pink.svg);
+                }
+            }
+            a:nth-child(2) {
+                background-image: url(../IMG/footer/instagram.png);
+                &:hover {
+                    background-image: url(../IMG/footer/inst_pink.svg);
+                }
+            }
+
+            a:nth-child(3) {
+                background-image: url(../IMG/footer/pinterest.svg);
+                &:hover {
+                    background-image: url(../IMG/footer/p_pink.svg);
+                }
+            }
+            a:nth-child(4) {
+                background-image: url(../IMG/footer/twitter.svg);
+                &:hover {
+                    background-image: url(../IMG/footer/twit_pink.svg);
+                }
             }
         }
     }

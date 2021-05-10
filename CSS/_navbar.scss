@@ -6,33 +6,65 @@
             justify-content: space-between;
             align-items: center;
             padding: 18px 0 18px 0;
-            @include media('<=tablet') {
+            @include media("<=tablet") {
                 padding-left: 32px;
                 padding-right: 32px;
             }
-            &-logosearch{
+            &-logosearch {
                 display: flex;
                 align-items: center;
-                &__logo{
+                &__logo {
                     margin-right: 41px;
+                    img:hover {
+                        transform: scale(1.2);
+                    }
                 }
-                &__search{
-
+                &__search {
                 }
             }
             &-menu {
                 display: flex;
                 list-style-type: none;
-                align-items: center;
+                &__burger,
+                &__profile,
+                &__cart {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 32px;
+                    width: 32px;
+                    display: inline-block;
+                }
                 &__burger {
                     margin-right: 33px;
 
+                    background-image: url(../IMG/navbar/burger.svg);
+                    @include media("<=phone") { 
+                        margin-right: 0px;
+                    }
+                    &:hover {
+                        background-image: url(../IMG/navbar/burger_pink.svg);
+                    }
                 }
                 &__profile {
                     margin-right: 33px;
+                    background-image: url(../IMG/navbar/profile.svg);
+                    @include media("<=phone") { 
+                        display: none;
+                    }
+                    &:hover {
+                        background-image: url(../IMG/navbar/profile_pink.svg);
+                    }
                 }
-                &__cart {
 
+                &__cart {
+                    background-image: url(../IMG/navbar/cart.svg);
+                    @include media("<=phone") { 
+                        display: none;
+                    }
+                    &:hover {
+                        background-image: url(../IMG/navbar/cart_pink.svg);
+                    }
                 }
             }
         }

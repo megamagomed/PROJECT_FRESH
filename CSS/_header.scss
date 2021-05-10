@@ -1,13 +1,16 @@
 .section-header {
     background-color: $header;
 
-    &-wrapper{
+    &-wrapper {
         display: flex;
         justify-content: center;
         margin-bottom: 65px;
         .header-image {
             display: flex;
             flex-basis: 50%;
+            @include media("<=phone") {
+                display: none;
+            }
             picture {
                 width: 100%;
                 display: flex;
@@ -15,7 +18,6 @@
             }
             img {
                 height: auto;
-                
             }
         }
 
@@ -23,7 +25,6 @@
             display: flex;
             flex-basis: 50%;
             align-items: center;
-            
 
             .text {
                 margin-left: 63px;
@@ -33,8 +34,18 @@
                 h1 {
                     font-weight: 900;
                     font-size: 48px;
-                    line-height: 58px; 
+                    line-height: 58px;
                     margin: 0;
+                    @include media("<=tablet") {
+                        font-weight: 900;
+                        font-size: 44px;
+                        line-height: 53px;
+                    }
+                    @include media("<=phone") {
+                        font-weight: 900;
+                        font-size: 38px;
+                        line-height: 46px;
+                    }
                 }
 
                 h2 {
@@ -42,11 +53,21 @@
                     font-size: 32px;
                     line-height: 38px;
                     margin: 0;
+                    @include media("<=tablet") {
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+                    @include media("<=phone") {
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
                     span {
                         color: $pink;
                     }
                 }
-                
+
                 &::before {
                     content: "";
                     position: absolute;
@@ -54,16 +75,10 @@
                     left: -16px;
                     width: 12px;
                     height: 100%;
-                    background-color: $pink
+                    background-color: $pink;
                 }
             }
-
         }
-
-
-
-
-
     }
 }
 // .herobox {
@@ -80,7 +95,7 @@
 //         h1 {
 //             font-weight: 900;
 //             font-size: 48px;
-//             line-height: 58px; 
+//             line-height: 58px;
 //             margin: 0;
 //         }
 //         h2 {
